@@ -56,7 +56,8 @@ namespace WindowsFormsApp1
         /// <param name="filename"></param>
         private string Inference(string filename)
         {
-            ModelFiles(@"C:\Users\jinwh\source\repos\WindowsFormsApp1\WindowsFormsApp1\model");
+            //ModelFiles(@"C:\Users\jinwh\source\repos\WindowsFormsApp1\WindowsFormsApp1\model");
+            ModelFiles(Application.StartupPath);
 
             // Construct an in-memory graph from the serialized form.
             var graph = new TFGraph();
